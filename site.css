@@ -1,0 +1,57 @@
+
+// priel css below -->
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E6E6FA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#navigation_div{
+    position: absolute;
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: white;
+    
+}
+
+.nav {
+    float: right;
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.nav > ul{
+    list-style-type: none;
+    background-color: transparent;
+}
+
+.nav > ul > li{
+    float: left;
+    text-align: center;
+    width: 33%;
+    padding-bottom: 5px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+}
+.nav > ul > li > a:link, a:visited{
+    display: inline;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.nav > ul > li:hover {
+    border-bottom-color: #32CD32;
+    color: dimgrey;
+}
+     
