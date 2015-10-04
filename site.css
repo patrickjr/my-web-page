@@ -11,7 +11,7 @@ body{
     top: 0;
     left: 0;
     margin: 0;
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
 }
 
@@ -24,10 +24,14 @@ body{
 }
 
 .nav {
-    float: right;
+    float: left;
     position: relative;
     height: 100%;
     width: 50%;
+}
+.nav + .nav {
+    float: right;
+    width: 35%;
 }
 
 .nav > ul{
@@ -51,7 +55,181 @@ body{
     text-transform: uppercase;
 }
 .nav > ul > li:hover {
+
     border-bottom-color: #32CD32;
     color: dimgrey;
 }
      
+.page-body{
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+#intro {
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+}
+.full{
+    height: 100%;
+    width: 100%;
+}
+
+
+.intro-buffer{
+    
+    padding-top: 70px;
+    border-bottom-style: solid;
+    border-bottom-color: #32CD32;
+    background-color: white;
+}
+
+.container{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+}
+
+.intro{
+    position: relative;
+    height: 95vh;
+}
+
+.test-about-container{
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height: 50vh;
+    min-height: 414px;
+    max-height: 414px;
+}
+.about-text{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    padding-left: 10%;
+    border-right: #286090 solid;
+}
+
+
+.about-text > p{
+   font-size: 20px;
+    padding-left: 15%;
+    padding-right: 10%;
+    top: 10%;
+    position: absolute;
+}    
+@media screen and (max-width: 600px) {
+.about-text > p{
+   font-size: 3.1vmin; 
+  }
+}
+@media screen and (max-width: 800px) {
+.about-text > p{
+   font-size: 14px; 
+  }
+}
+@media screen and (max-width: 1000px) {
+.about-text > p{
+   font-size: 16px; 
+  }
+}
+@media screen and (max-width: 1200px) {
+.about-text > p  {
+   font-size: 18px; 
+  }
+}
+
+
+
+
+
+.resume{
+    border-top: #32CD32;
+    border-style: solid;
+    background-color: #286090;
+    height: 100vh;
+}
+.my-header{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+
+
+
+
+.projects{
+    background-color: white;
+    border-top: #32CD32;
+    border-style: solid;
+    height: 100vh;
+}
+
+.projects > .my-header{
+    color: #286090;
+}
+
+
+.contact{
+    background-color: #286090;
+    border-top: #32CD32;
+    border-style: solid;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-image{
+    position: absolute;
+    height: 100%;
+    left: -5%;
+}
+.about-table{
+    height: 100%;
+    white-space: nowrap;
+    width: 100%;
+    display: table;
+}
+
+.about-cell {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.about-cell img {
+  max-height: 414px;
+  max-width: 100%;
+  border-color: #286090;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+
+.about-image{
+    position: relative;
+    width: 40%;
+    float: right;
+    height: 100%;
+    
+}
+
